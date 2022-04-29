@@ -1,0 +1,11 @@
+@mixin flex-center-xy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin border-and-radius {
+  border: $border;
+  border-radius: 10px;
+}

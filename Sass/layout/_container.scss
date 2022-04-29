@@ -1,19 +1,22 @@
+body {
+  @include flex-center-xy;
+  height: 100vh;
+}
+
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  @include flex-center-xy;
   padding: 41px 28px 31px 29px;
   width: 1060px;
-  margin: 0 auto;
-  border: 1px solid $border-color;
-  border-radius: 15px;
+  @include border-and-radius;
   background-color: $background-main-color;
 }
 
 .cont-movie {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px 23px;
   padding: 26px 27px 30px;
-  width: 1003px;
-  border: 1px solid $border-color;
-  border-radius: 15px;
+  width: 100%;
+  @include border-and-radius;
   background-color: $background-sub-color;
 }
