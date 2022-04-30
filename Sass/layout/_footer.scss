@@ -1,0 +1,11 @@
+.footer {
+  width: 100%;
+  height: 213px;
+  background-color: $background-main-color;
+  &-inner {
+    margin: 0 auto;
+    padding-top: 53px;
+    width: 1200px;
+    background-color: #fc6;
+  }
+}

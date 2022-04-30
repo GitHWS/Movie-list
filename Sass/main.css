@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -38,6 +39,7 @@
 }
 
 .header-tab_menu li button {
+  font-family: "Roboto, san-serif";
   font-weight: 500;
   color: #828282;
 }
@@ -55,13 +57,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 100vh;
+  margin-top: 86px;
 }
 
 .wrapper {
@@ -72,12 +71,10 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 135px;
   padding: 41px 28px 31px 29px;
   width: 1060px;
   border: 1px solid #bdbdbd;
@@ -85,7 +82,7 @@ body {
   background-color: #f2f2f2;
 }
 
-.cont-movie {
+.movie-list {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[4];
@@ -93,22 +90,156 @@ body {
   gap: 24px 23px;
   padding: 26px 27px 30px;
   width: 100%;
+  font-family: "Noto sans KR, san-serif";
   border: 1px solid #bdbdbd;
   border-radius: 10px;
   background-color: #fff;
 }
 
-.list-item {
-  padding: 19px 20px 0;
+.footer {
   width: 100%;
-  background-color: #fff;
+  height: 213px;
+  background-color: #f2f2f2;
 }
 
-.list-item-img {
-  width: 100%;
+.footer-inner {
+  margin: 0 auto;
+  padding-top: 53px;
+  width: 1200px;
+  background-color: #fc6;
+}
+
+.movie {
+  border: 1px solid #bdbdbd;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.movie .movie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 19px 20px 0;
+  margin-bottom: 18px;
+}
+
+.movie .movie-info .movie-title {
+  margin-bottom: 12px;
+  font-weight: 900;
+  line-height: 23px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.movie .movie-info .movie-img {
+  margin-bottom: 11px;
+  width: 180px;
+  height: 250px;
   border: 1px solid #bdbdbd;
   border-radius: 10px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
           filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.movie .movie-info .movie-dl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 5px;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.movie .movie-info .movie-dl:first-of-type {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.movie .movie-info .movie-dl div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movie .movie-info .movie-dl .movie-dt {
+  padding-right: 5px;
+  color: #828282;
+}
+
+.movie .movie-info .movie-dl .movie-dd {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.movie .movie-info .movie-dl .icon-star {
+  display: inline-block;
+  margin: -3px 4px 0 0;
+  width: 14px;
+  height: 14px;
+  background-image: url(/images/별점이미지.png);
+  background-position: center;
+  background-size: 14px;
+  background-repeat: no-repeat;
+}
+
+.movie .movie-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  border-top: 1px solid #bdbdbd;
+  background-color: #f2f2f2;
+}
+
+.movie .movie-btn a:first-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: block;
+  padding: 9px 0 12px 0;
+  border-right: 1px solid #bdbdbd;
+}
+
+.movie .movie-btn a:last-child {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: block;
+  padding: 9px 0 12px 0;
+}
+
+.movie .movie-btn a:last-child .icon-play {
+  display: inline-block;
+  margin-right: -2px;
+  width: 16px;
+  height: 16px;
+  vertical-align: text-top;
+  background-image: url(/images/아이콘_재생.png);
+  background-position: center;
+  background-size: 16px;
+  background-repeat: no-repeat;
+}
+
+.movie .movie-btn a:last-child .preview {
+  vertical-align: top;
 }
 /*# sourceMappingURL=main.css.map */

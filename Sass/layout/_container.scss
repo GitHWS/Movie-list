@@ -1,22 +1,24 @@
 body {
   @include flex-center-xy;
-  height: 100vh;
+  margin-top: 86px;
 }
 
 .wrapper {
   @include flex-center-xy;
+  margin-bottom: 135px;
   padding: 41px 28px 31px 29px;
   width: 1060px;
   @include border-and-radius;
   background-color: $background-main-color;
 }
 
-.cont-movie {
+.movie-list {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 24px 23px;
   padding: 26px 27px 30px;
   width: 100%;
+  font-family: $font-noto;
   @include border-and-radius;
   background-color: $background-sub-color;
 }

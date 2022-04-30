@@ -58,6 +58,12 @@ section {
 body {
   line-height: 1;
 }
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
 ol,
 ul {
   list-style: none;

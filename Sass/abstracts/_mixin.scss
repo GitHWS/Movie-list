@@ -1,11 +1,16 @@
 @mixin flex-center-xy {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
 }
 
 @mixin border-and-radius {
   border: $border;
   border-radius: 10px;
+}
+
+@mixin font-bold-black {
+  font-weight: 900;
+  color: $font-main-color;
 }
