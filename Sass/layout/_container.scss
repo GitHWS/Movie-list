@@ -7,7 +7,7 @@ body {
   @include flex-center-xy;
   margin-bottom: 135px;
   padding: 41px 28px 31px 29px;
-  width: 1060px;
+  max-width: 1060px;
   @include border-and-radius;
   background-color: $background-main-color;
 }
